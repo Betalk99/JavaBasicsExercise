@@ -7,6 +7,6 @@ public class Main {
         System.out.println("I numeri sono uguali: " + equal(x,y));
     }
     public static boolean equal(int x, int y) {
-        return x == y ;
+        return x == y;
     }
 }
