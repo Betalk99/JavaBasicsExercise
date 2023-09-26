@@ -8,8 +8,7 @@ public class Main {
     }
 
     public static double media(double x, double y, double z){
-        double som = x + y + z;
-        double mediaSomma = som / 3;
+        double mediaSomma = (x + y + z) / 3;
         return mediaSomma;
     }
 }
