@@ -1,13 +1,12 @@
 public class Main {
     public static void main(String[] args) {
-        int x = 4;
+        int x = 7;
 
-        if (num(x)){
-            System.out.println("Numero è pari ");
-        }else{
-            System.out.println("Numero è dispari ");
-        }
+        boolean isPari = num(x);
+        boolean isDispari = !isPari;
 
+        System.out.println(x + " è un numero pari: " + isPari);
+        System.out.println(x + " è un numero dispari: " + isDispari);
     }
     public static boolean num(int x){
         return (x % 2) == 0;
