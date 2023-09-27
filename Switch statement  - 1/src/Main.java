@@ -1,7 +1,7 @@
 public class Main {
     public static void main(String[] args) {
-        int numSet = 2;
-        
+        int numSet = 0;
+
         System.out.println(checkDay(numSet));
     }
     public static String checkDay(int x){
