@@ -2,7 +2,8 @@ public class Main {
     public static void main(String[] args) {
         int[] arrayNum = creaERiempiNum();
 
-        // Stampiamo l'array di numeri
+
+        // Stampiamo l'array di numeria
         for (int numero : arrayNum) {
             System.out.print(numero + " ");
         }
