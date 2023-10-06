@@ -11,7 +11,7 @@ scambiare le sue righe e le sue colonne stampandola a video. Matrice di partenza
 
 public class Main {
     public static void main(String[] args) {
-        int [][] num = {{1,2,3},{4,5,6}};
+        int [][] num = {{1,2,3,4},{4,5,6,6,6}};
         int [][] numScamb = scambPosiz(num);
 
         stampaArray(numScamb);
@@ -20,19 +20,38 @@ public class Main {
     //invertire il numero di colonne con le righe
     public static int [][] scambPosiz(int [][] arr){
         int righe = arr.length;
-        int colonne = arr[0].length;
+        int colonne = maxColonne(arr);
 
         int [][] arrScam = new int[colonne][righe];
 
         for(int i = 0; i < righe; i++){
             for(int j = 0; j < colonne;j++){
-                arrScam[j][i] = arr[i][j];
+                if(i < arr.length && j < arr[i].length){
+                    arrScam[j][i] = arr[i][j];
+                }
+                /*arrScam[j][i] = arr[i][j];
+                System.out.print(" " + arrScam[j][i]);*/
             }
-
+            System.out.println(" ");
         }
 
     return arrScam;
     }
+
+    public static int maxColonne(int [][] arr){
+        int maxCol = 0;
+
+        for(int i=0; i < arr.length; i++){
+            int[] righe = arr[i];
+            if(righe.length > maxCol){
+                maxCol = righe.length;
+            }
+        }
+        return maxCol;
+    }
+
+
+
     // stampare array
     public static void stampaArray(int [][] arr){
         for(int i = 0 ; i < arr.length ; i++) {
