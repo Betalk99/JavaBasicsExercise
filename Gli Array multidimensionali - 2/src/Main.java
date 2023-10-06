@@ -29,12 +29,9 @@ public class Main {
                 if(i < arr.length && j < arr[i].length){
                     arrScam[j][i] = arr[i][j];
                 }
-                /*arrScam[j][i] = arr[i][j];
-                System.out.print(" " + arrScam[j][i]);*/
             }
             System.out.println(" ");
         }
-
     return arrScam;
     }
 
@@ -49,8 +46,6 @@ public class Main {
         }
         return maxCol;
     }
-
-
 
     // stampare array
     public static void stampaArray(int [][] arr){
